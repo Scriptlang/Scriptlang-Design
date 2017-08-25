@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>1220</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Scriptlang Instructions (DAG)
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>150</x>
+      <y>40</y>
+      <w>200</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>NAME: "Arithmetic/Logic"
+--
+OPCODE: math
+--
+OPERANDS:
+[1]- &lt;enum&gt; Operation
+|                                |
+0: +  -  *  /  %  |  &amp;  ^  ||  &amp;&amp;  !  ~ 
+(11)
+|                                |
+[2]- &lt;reg&gt; Lvalue
+[3]- &lt;reg&gt; Rvalue
+--
+OUTPUT:
+[1]- &lt;reg&gt; rvalue
+bg=red
+--
+NOTES:
+Similar to ArithLogic and can be
+used to copy scalar data from
+one reg to another</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>960</x>
+      <y>40</y>
+      <w>240</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>NAME: "Allocate"
+--
+OPCODE: alloc
+--
+OPERANDS:
+[1]- &lt;enum&gt; Type
+|                                |
+	0: Object
+	1: Function
+	2: Module
+|                                |
+[2]- &lt;enum&gt; Alloc Mechanism
+|                                |
+0: Static
+1: Dynamic
+|                                |
+--
+OUTPUT:
+[1]-
+--
+NOTES:
+Allocates memory statically
+(stack + epilogue/prologue + push/pop)
+or dynamically
+(heap slab allocator)
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>40</y>
+      <w>120</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Node Types
+--
+Red - Operational
+
+Green - Structural
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>170</x>
+      <y>390</y>
+      <w>160</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>NAME: "Run Command"
+--
+OPCODE: runcmd
+--
+OPERANDS:
+[1]- Command opcode
+[2]- Arg 1
+[3]- Arg 2
+... (TODO)
+--
+OUTPUT:
+[1]- &lt;object&gt; rvalue
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>360</x>
+      <y>40</y>
+      <w>240</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>NAME: "Branch"
+--
+OPCODE: goto
+--
+OPERANDS:
+[1]- &lt;enum&gt; Operation
+|                                |
+0: ==  !=  &lt;  &lt;=  &gt;  &gt;=
+(5)
+|                                |
+[2]- &lt;reg&gt; Lvalue
+[3]- &lt;reg&gt; Rvalue
+[4]- &lt;reg/const&gt; Line Number if true
+[5]- &lt;reg/const&gt; Line Number if false
+--
+OUTPUT:
+[1]- &lt;reg&gt; (rvalue)
+bg=red
+--
+NOTES:
+Similar to the combination
+CMP + Branch in one go</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>610</x>
+      <y>40</y>
+      <w>340</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>NAME: "Register Access"
+--
+OPCODE: mov
+--
+OPERANDS:
+[1]- &lt;enum&gt; Operation
+|                                |
+	0: Read
+	1: Write
+|                                |
+[2]- &lt;reg/const&gt; rvalue (rd) / lvalue (wr)
+[3]- &lt;const&gt; Access width (8,16,32,64,1,1024, 4096, ...)
+--
+OUTPUT:
+[1]- &lt;reg/const&gt; rvalue (wr) / lvalue (rd)
+bg=red
+--
+NOTES:
+Similar to Loads and Stores.
+Can do SIMD operations by using 'math' nodes
+in the operands</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>640</x>
+      <y>820</y>
+      <w>220</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>NAME: "enum"
+--
+KIND: Operand - Constant Symbolic
+SIDE: rvalue
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>60</x>
+      <y>820</y>
+      <w>240</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>NAME: "reg"
+--
+KIND: Operand - Mutable
+SIDE: r/lvalue
+ATTRIBUTES:
+|                                |
+[1]: Specialty
+(0 Integer, 1 FP, 2 Unicode Character)
+
+[2]: Granularity (0 scalar, 1 vector)
+
+[3]: Bit count
+|                                |
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>870</x>
+      <y>820</y>
+      <w>280</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>NAME: "object"
+--
+KIND: Operand - Unresolved external generic
+SIDE: r/lvalue
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>310</x>
+      <y>820</y>
+      <w>320</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>NAME: "const"
+--
+KIND: Operand - Integer / Floating Point / Character
+SIDE: rvalue
+ATTRIBUTES:
+|                                |
+[1]: Specialty
+(0 Integer, 1 FP, 2 Unicode Character)
+
+[2]: Granularity (0 scalar, 1 vector)
+
+[3]: Bit count
+|                                |
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
