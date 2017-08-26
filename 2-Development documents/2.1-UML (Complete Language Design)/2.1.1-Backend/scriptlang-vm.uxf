@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>8</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>48</x>
-      <y>16</y>
-      <w>1008</w>
-      <h>24</h>
+      <x>0</x>
+      <y>54</y>
+      <w>1548</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>Scriptlang Virtual Machine (VM)
 bg=blue</panel_attributes>
@@ -16,10 +16,10 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>48</x>
-      <y>48</y>
-      <w>168</w>
-      <h>152</h>
+      <x>0</x>
+      <y>99</y>
+      <w>189</w>
+      <h>171</h>
     </coordinates>
     <panel_attributes>&lt;&lt;VM&gt;&gt;
 Slang::VM
@@ -40,10 +40,10 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>264</x>
-      <y>240</y>
-      <w>168</w>
-      <h>152</h>
+      <x>540</x>
+      <y>99</y>
+      <w>189</w>
+      <h>171</h>
     </coordinates>
     <panel_attributes>&lt;&lt;VM&gt;&gt;
 Slang::VM::Core::Register
@@ -65,10 +65,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>480</x>
-      <y>240</y>
-      <w>168</w>
-      <h>152</h>
+      <x>846</x>
+      <y>99</y>
+      <w>189</w>
+      <h>171</h>
     </coordinates>
     <panel_attributes>&lt;&lt;VM&gt;&gt;
 Slang::VM::Core::Calculator
@@ -90,13 +90,13 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>48</x>
-      <y>240</y>
-      <w>168</w>
-      <h>152</h>
+      <x>234</x>
+      <y>99</y>
+      <w>189</w>
+      <h>171</h>
     </coordinates>
     <panel_attributes>&lt;&lt;VM&gt;&gt;
-Slang::VM::Core::Thread
+Slang::VM::Core::SlangCore
 {Some Properties}
 --
 -id: Long
@@ -114,39 +114,14 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>696</x>
-      <y>48</y>
-      <w>168</w>
-      <h>152</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;VM&gt;&gt;
-Slang::VM::OS::CMD::
-Windows/Linux
-{Some Properties}
---
--id: Long
-_-ClassAttribute: Long_
---
-#Operation(i: int): int
-/+AbstractOperation()/
---
-Responsibilities
--- Resp1
-*-- Resp2*
-bg=gray</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>176</x>
-      <y>432</y>
-      <w>168</w>
-      <h>152</h>
+      <x>441</x>
+      <y>315</y>
+      <w>189</w>
+      <h>171</h>
     </coordinates>
     <panel_attributes>&lt;&lt;VM&gt;&gt;
 Slang::VM::Core::Register
-::Scalar/Vector
+::RegisterScalar/Vector
 {Some Properties}
 --
 -id: Long
@@ -165,13 +140,14 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>696</x>
-      <y>240</y>
-      <w>168</w>
-      <h>152</h>
+      <x>1098</x>
+      <y>99</y>
+      <w>189</w>
+      <h>171</h>
     </coordinates>
     <panel_attributes>&lt;&lt;VM&gt;&gt;
-Slang::VM::Core::Memory
+Slang::VM::Core::
+MemoryManager
 {Some Properties}
 --
 -id: Long
@@ -188,10 +164,10 @@ bg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>248</x>
-      <y>384</y>
-      <w>112</w>
-      <h>64</h>
+      <x>522</x>
+      <y>261</y>
+      <w>126</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 group=2
@@ -201,60 +177,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>264</x>
-      <y>48</y>
-      <w>168</w>
-      <h>152</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;VM&gt;&gt;
-Slang::VM::Translator::Cmd
-::Windows/Linux
-{Some Properties}
---
--id: Long
-_-ClassAttribute: Long_
---
-#Operation(i: int): int
-/+AbstractOperation()/
---
-Responsibilities
--- Resp1
-*-- Resp2*
-bg=green</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>480</x>
-      <y>48</y>
-      <w>168</w>
-      <h>152</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;VM&gt;&gt;
-Slang::VM::Compiler::Mach
-::x86/AMD/ARM/FISC
-{Some Properties}
---
--id: Long
-_-ClassAttribute: Long_
---
-#Operation(i: int): int
-/+AbstractOperation()/
---
-Responsibilities
--- Resp1
-*-- Resp2*
-bg=green</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>344</x>
-      <y>432</y>
-      <w>168</w>
-      <h>152</h>
+      <x>630</x>
+      <y>315</y>
+      <w>189</w>
+      <h>171</h>
     </coordinates>
     <panel_attributes>&lt;&lt;VM&gt;&gt;
 Slang::VM::Core::Register
@@ -277,10 +203,10 @@ group=3</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>336</x>
-      <y>384</y>
-      <w>112</w>
-      <h>64</h>
+      <x>621</x>
+      <y>261</y>
+      <w>126</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 bg=yellow</panel_attributes>
@@ -289,14 +215,14 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>888</x>
-      <y>48</y>
-      <w>168</w>
-      <h>152</h>
+      <x>1359</x>
+      <y>99</y>
+      <w>189</w>
+      <h>171</h>
     </coordinates>
     <panel_attributes>&lt;&lt;VM&gt;&gt;
-Slang::VM::OS::API::
-Windows/Linux
+Slang::VM::Core::
+MemoryDedicated
 {Some Properties}
 --
 -id: Long
@@ -306,9 +232,8 @@ _-ClassAttribute: Long_
 /+AbstractOperation()/
 --
 Responsibilities
--- Resp1
-*-- Resp2*
-bg=gray</panel_attributes>
+-- Manage memory
+bg=red</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

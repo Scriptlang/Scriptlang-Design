@@ -4,20 +4,20 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>0</y>
+      <x>160</x>
+      <y>70</y>
       <w>1220</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Scriptlang Instructions (DAG)
+    <panel_attributes>Scriptlang Instruction Set (DAG)
 bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>150</x>
-      <y>40</y>
+      <x>310</x>
+      <y>110</y>
       <w>200</w>
       <h>320</h>
     </coordinates>
@@ -47,8 +47,8 @@ one reg to another</panel_attributes>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>960</x>
-      <y>40</y>
+      <x>1120</x>
+      <y>110</y>
       <w>240</w>
       <h>390</h>
     </coordinates>
@@ -83,8 +83,8 @@ bg=red</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>40</y>
+      <x>160</x>
+      <y>110</y>
       <w>120</w>
       <h>80</h>
     </coordinates>
@@ -99,8 +99,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>170</x>
-      <y>390</y>
+      <x>330</x>
+      <y>460</y>
       <w>160</w>
       <h>200</h>
     </coordinates>
@@ -122,8 +122,8 @@ bg=red</panel_attributes>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>360</x>
-      <y>40</y>
+      <x>520</x>
+      <y>110</y>
       <w>240</w>
       <h>330</h>
     </coordinates>
@@ -154,8 +154,8 @@ CMP + Branch in one go</panel_attributes>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>610</x>
-      <y>40</y>
+      <x>770</x>
+      <y>110</y>
       <w>340</w>
       <h>320</h>
     </coordinates>
@@ -185,8 +185,8 @@ in the operands</panel_attributes>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>640</x>
-      <y>820</y>
+      <x>860</x>
+      <y>890</y>
       <w>220</w>
       <h>100</h>
     </coordinates>
@@ -200,8 +200,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>60</x>
-      <y>820</y>
+      <x>220</x>
+      <y>890</y>
       <w>240</w>
       <h>240</h>
     </coordinates>
@@ -224,8 +224,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>870</x>
-      <y>820</y>
+      <x>1090</x>
+      <y>890</y>
       <w>280</w>
       <h>100</h>
     </coordinates>
@@ -239,14 +239,14 @@ bg=green</panel_attributes>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>310</x>
-      <y>820</y>
-      <w>320</w>
+      <x>470</x>
+      <y>890</y>
+      <w>380</w>
       <h>240</h>
     </coordinates>
     <panel_attributes>NAME: "const"
 --
-KIND: Operand - Integer / Floating Point / Character
+KIND: Operand - Constant Integer / Floating Point / Character
 SIDE: rvalue
 ATTRIBUTES:
 |                                |
