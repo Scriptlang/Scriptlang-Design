@@ -45,7 +45,8 @@ bg=blue</panel_attributes>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Root</panel_attributes>
+    <panel_attributes>Root
+bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -56,7 +57,8 @@ bg=blue</panel_attributes>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>BlockUnit</panel_attributes>
+    <panel_attributes>BlockUnit
+bg=green</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -67,7 +69,8 @@ bg=blue</panel_attributes>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Label</panel_attributes>
+    <panel_attributes>Label
+bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -78,7 +81,8 @@ bg=blue</panel_attributes>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Declaration</panel_attributes>
+    <panel_attributes>Declaration
+bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -90,7 +94,8 @@ bg=blue</panel_attributes>
       <h>30</h>
     </coordinates>
     <panel_attributes>Statement
-group=1</panel_attributes>
+bg=yellow
+group=4</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -101,7 +106,9 @@ group=1</panel_attributes>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Object</panel_attributes>
+    <panel_attributes>Object
+bg=orange
+group=1</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -113,7 +120,8 @@ group=1</panel_attributes>
       <h>30</h>
     </coordinates>
     <panel_attributes>If
-group=1</panel_attributes>
+bg=orange
+group=4</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -124,7 +132,9 @@ group=1</panel_attributes>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Function</panel_attributes>
+    <panel_attributes>Function
+bg=orange
+group=2</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -135,7 +145,8 @@ group=1</panel_attributes>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Class</panel_attributes>
+    <panel_attributes>Class
+bg=orange</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -146,7 +157,8 @@ group=1</panel_attributes>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Struct</panel_attributes>
+    <panel_attributes>Struct
+bg=orange</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -158,7 +170,8 @@ group=1</panel_attributes>
       <h>30</h>
     </coordinates>
     <panel_attributes>Switch
-group=1</panel_attributes>
+bg=orange
+group=4</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -170,7 +183,8 @@ group=1</panel_attributes>
       <h>30</h>
     </coordinates>
     <panel_attributes>For
-group=1</panel_attributes>
+bg=orange
+group=4</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -182,7 +196,8 @@ group=1</panel_attributes>
       <h>30</h>
     </coordinates>
     <panel_attributes>While
-group=1</panel_attributes>
+bg=orange
+group=4</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -194,7 +209,8 @@ group=1</panel_attributes>
       <h>30</h>
     </coordinates>
     <panel_attributes>Flow
-group=1</panel_attributes>
+bg=orange
+group=4</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -206,7 +222,8 @@ group=1</panel_attributes>
       <h>30</h>
     </coordinates>
     <panel_attributes>Expression
-group=1</panel_attributes>
+bg=orange
+group=4</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -217,7 +234,9 @@ group=1</panel_attributes>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Enum</panel_attributes>
+    <panel_attributes>Enum
+bg=orange
+group=3</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -228,7 +247,9 @@ group=1</panel_attributes>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Normal</panel_attributes>
+    <panel_attributes>Normal
+bg=red
+group=2</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -239,7 +260,9 @@ group=1</panel_attributes>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Lambda</panel_attributes>
+    <panel_attributes>Lambda
+bg=red
+group=2</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -250,7 +273,9 @@ group=1</panel_attributes>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Native</panel_attributes>
+    <panel_attributes>Native
+bg=red
+group=1</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -261,7 +286,9 @@ group=1</panel_attributes>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Class Object</panel_attributes>
+    <panel_attributes>Class Object
+bg=red
+group=1</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -272,7 +299,9 @@ group=1</panel_attributes>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Struct Object</panel_attributes>
+    <panel_attributes>Struct Object
+bg=red
+group=1</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -283,7 +312,9 @@ group=1</panel_attributes>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Const</panel_attributes>
+    <panel_attributes>Const
+bg=red
+group=3</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -294,7 +325,9 @@ group=1</panel_attributes>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Tuple</panel_attributes>
+    <panel_attributes>Tuple
+bg=red
+group=3</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -305,7 +338,9 @@ group=1</panel_attributes>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Lambda</panel_attributes>
+    <panel_attributes>Lambda
+bg=red
+group=3</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -316,7 +351,9 @@ group=1</panel_attributes>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Struct</panel_attributes>
+    <panel_attributes>Struct
+bg=red
+group=3</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

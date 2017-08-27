@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>160</x>
-      <y>70</y>
+      <x>10</x>
+      <y>60</y>
       <w>1220</w>
       <h>30</h>
     </coordinates>
@@ -16,8 +16,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>310</x>
-      <y>110</y>
+      <x>160</x>
+      <y>100</y>
       <w>200</w>
       <h>320</h>
     </coordinates>
@@ -47,8 +47,8 @@ one reg to another</panel_attributes>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>1120</x>
-      <y>110</y>
+      <x>970</x>
+      <y>100</y>
       <w>240</w>
       <h>390</h>
     </coordinates>
@@ -83,8 +83,8 @@ bg=red</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>160</x>
-      <y>110</y>
+      <x>10</x>
+      <y>100</y>
       <w>120</w>
       <h>80</h>
     </coordinates>
@@ -99,8 +99,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>330</x>
-      <y>460</y>
+      <x>180</x>
+      <y>450</y>
       <w>160</w>
       <h>200</h>
     </coordinates>
@@ -122,8 +122,8 @@ bg=red</panel_attributes>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>520</x>
-      <y>110</y>
+      <x>370</x>
+      <y>100</y>
       <w>240</w>
       <h>330</h>
     </coordinates>
@@ -154,8 +154,8 @@ CMP + Branch in one go</panel_attributes>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>770</x>
-      <y>110</y>
+      <x>620</x>
+      <y>100</y>
       <w>340</w>
       <h>320</h>
     </coordinates>
@@ -185,8 +185,8 @@ in the operands</panel_attributes>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>860</x>
-      <y>890</y>
+      <x>710</x>
+      <y>880</y>
       <w>220</w>
       <h>100</h>
     </coordinates>
@@ -200,8 +200,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>220</x>
-      <y>890</y>
+      <x>70</x>
+      <y>880</y>
       <w>240</w>
       <h>240</h>
     </coordinates>
@@ -224,8 +224,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>1090</x>
-      <y>890</y>
+      <x>940</x>
+      <y>880</y>
       <w>280</w>
       <h>100</h>
     </coordinates>
@@ -239,8 +239,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>470</x>
-      <y>890</y>
+      <x>320</x>
+      <y>880</y>
       <w>380</w>
       <h>240</h>
     </coordinates>
